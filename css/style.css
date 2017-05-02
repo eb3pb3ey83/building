@@ -1,0 +1,183 @@
+/* line 1, ../sass/style.scss */
+*{
+  box-sizing: border-box;
+}
+.s-pic {
+  width: 50%;
+  float: left;
+  position: relative;
+  height: auto !important;
+}
+/* line 6, ../sass/style.scss */
+.s-pic .clone {
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+  width: 100%;
+}
+/* line 11, ../sass/style.scss */
+.s-pic .s-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -10000px;
+  opacity: 0;
+  transition: opacity .7s,left 0s .7s;
+}
+/* line 19, ../sass/style.scss */
+.s-pic .s-img img {
+  max-width: inherit;
+}
+/* line 24, ../sass/style.scss */
+.s-pic .s-img:nth-child(2) {
+  height: 0;
+  opacity: 1;
+  left: 0;
+  overflow: hidden;
+  transition: height linear 0.7s;
+}
+/* line 30, ../sass/style.scss */
+.s-pic .s-img:nth-child(2).active {
+  height: 100%;
+  transition: height linear 0.7s;
+}
+/* line 36, ../sass/style.scss */
+.s-pic .s-img:nth-child(3) {
+  width: 0;
+  height: 100%;
+  opacity: 1;
+  right: 0;
+  left: auto;
+  overflow: hidden;
+  transition: width linear 0.7s;
+}
+/* line 44, ../sass/style.scss */
+.s-pic .s-img:nth-child(3) img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+/* line 49, ../sass/style.scss */
+.s-pic .s-img:nth-child(3).active {
+  right: 0;
+  left: auto;
+  width: 100%;
+  transition: width linear 0.7s;
+}
+/* line 57, ../sass/style.scss */
+.s-pic .s-img:nth-child(5) {
+  width: 0;
+  height: 100%;
+  opacity: 1;
+  left: 0;
+  overflow: hidden;
+  transition: width linear 0.7s;
+}
+/* line 64, ../sass/style.scss */
+.s-pic .s-img:nth-child(5) img {
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+/* line 69, ../sass/style.scss */
+.s-pic .s-img:nth-child(5).active {
+  left: 0;
+  width: 100%;
+  transition: width linear 0.7s;
+}
+/* line 76, ../sass/style.scss */
+.s-pic .s-img.active {
+  left: 0;
+  opacity: 1;
+  transition: opacity .7s;
+}
+
+/* line 85, ../sass/style.scss */
+.s-content {
+  width: 50%;
+  float: left;
+  padding: 30px 0 0 30px;
+  font-family: '微軟正黑體','sans-serif';
+}
+/* line 89, ../sass/style.scss */
+.s-content h3 {
+  margin: 30px 0;
+  font-weight: bold;
+  color: #e69a04;
+  font-size: 1.5rem !important;
+}
+
+/* line 98, ../sass/style.scss */
+.s-text {
+  padding-bottom: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 103, ../sass/style.scss */
+.s-father {
+  background: #161b21;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  /* line 103, ../sass/style.scss */
+  .s-father {
+    padding: 0 2em;
+  }
+}
+
+/* line 111, ../sass/style.scss */
+#s-next {
+  color: #fff;
+  transition: .3s;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+/* line 116, ../sass/style.scss */
+#s-next:hover {
+  border: 2px solid #3984fa;
+  background: #3984fa;
+}
+/* line 120, ../sass/style.scss */
+#s-next i {
+  padding: 0 5px;
+}
+/* line 123, ../sass/style.scss */
+#s-next.none {
+  visibility: hidden;
+}
+
+/* line 127, ../sass/style.scss */
+#s-prev {
+  color: #fff;
+  transition: .3s;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+/* line 132, ../sass/style.scss */
+#s-prev:hover {
+  border: 2px solid #3984fa;
+  background: #3984fa;
+}
+/* line 136, ../sass/style.scss */
+#s-prev i {
+  padding: 0 5px;
+}
+/* line 139, ../sass/style.scss */
+#s-prev.none {
+  visibility: hidden;
+}
+
+/* line 143, ../sass/style.scss */
+.blue-bg {
+  padding: 2em 0;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 149, ../sass/style.scss */
+.blue-bg h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
